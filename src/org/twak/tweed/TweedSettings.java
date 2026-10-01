@@ -1,10 +1,13 @@
 package org.twak.tweed;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -229,8 +232,9 @@ public class TweedSettings {
 			while (recentFiles.f.size() > 20)
 				recentFiles.f.remove( recentFiles.f.size() - 1 );
 			try {
-				new XStream().toXML( recentFiles, new FileOutputStream( RECENT_FILE_LOCATION ) );
-			} catch ( FileNotFoundException e ) {
+				BufferedWriter writer = Files.newBufferedWriter(RECENT_FILE_LOCATION.toPath(), StandardCharsets.UTF_8);
+				new XStream().toXML( recentFiles, writer );
+			} catch ( Throwable e ) {
 				e.printStackTrace();
 			}
 //		}
@@ -240,7 +244,8 @@ public class TweedSettings {
 
 		if (recentFiles == null) {
 			try {
-				recentFiles = (RecentFiles) new XStream().fromXML( RECENT_FILE_LOCATION );
+				BufferedReader reader = Files.newBufferedReader(RECENT_FILE_LOCATION.toPath(), StandardCharsets.UTF_8);
+				recentFiles = (RecentFiles) new XStream().fromXML(reader);
 			}                  catch (Throwable th) {
 				System.out.println( "couldn't load recent project list" );
 				recentFiles = new RecentFiles();
@@ -259,7 +264,7 @@ public class TweedSettings {
 				return;
 			}
 			else {
-				JOptionPane.showMessageDialog( null, "Can't find last project: \"" + last.getName()+"\"" );
+				JOptionPane.showMessageDialog( null, "Can't find last project: \"" + last.getAbsolutePath()+"\"" );
 				recentFiles.f.remove( 0 );
 			}
 		}
