@@ -7,6 +7,16 @@ procex ([video](https://youtu.be/K0yUXjM_YKE)) are a mathematical model of tradi
 
 ![interface pic which melts your eyes](https://raw.githubusercontent.com/twak/chordatlas/22b4513bb2e1ac8c9bc1034c4b187025346f5d1a/wiki/pic.jpg)
 
+## 編譯
+
+1. 安裝 [java jdk 8](https://www.oracle.com/tw/java/technologies/javase/javase8-archive-downloads.html)、[maven](https://maven.apache.org/download.cgi#CurrentMaven)、gurobi 9
+2. 執行下方指令來將 Gurobi 安裝為 local package  
+  `mvn install:install-file -Dfile=<path to gurobi.jar> -DgroupId=local_gurobi -DartifactId=local_gurobi -Dversion=local_gurobi -Dpackaging=jar`
+3. 在專案根目錄執行 `mvn package`
+4. 編譯好的 jar 會在 `target/` 資料夾
+
+> 如果使用 VS Code 開啟專案，可以修改 .vscode/settings.json 中 `maven.executable.path`、`maven.terminal.customEnv` 的 JAVA_HOME、`terminal.integrated.env.windows`的 JAVA_HOME 和 PATH 的值到 jdk 及 maven 的安裝路徑
+
 ## run
 
 the system is developed on ubuntu, but most of the non-machine learning systems should work on any platform. chordatlas is very much "academic-grade" - if you have problems using this system, I would love to [know](https://github.com/twak/chordatlas/issues) so I can fix them!

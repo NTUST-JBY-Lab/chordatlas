@@ -1,0 +1,14 @@
+{
+    "maven.executable.path": "${workspaceFolder}\\..\\apache-maven-3.9.16\\bin\\mvn.cmd",
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",
+            "value": "${workspaceFolder}\\..\\jdk1.8.0_202"
+        }
+    ],
+    "terminal.integrated.env.windows": {
+        "JAVA_HOME": "${workspaceFolder}\\..\\jdk1.8.0_202",
+        "Path": "${workspaceFolder}\\..\\jdk1.8.0_202\\bin;${workspaceFolder}\\..\\apache-maven-3.9.16\\bin;${env:Path}"
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
