@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_202"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
@@ -12,25 +16,1275 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="resources"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/javax/vecmath/vecmath/1.5.2/vecmath-1.5.2.jar">
 		<attributes>
+			<attribute name="maven.artifactId" value="vecmath"/>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.5.2"/>
+			<attribute name="maven.groupId" value="javax.vecmath"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="target/generated-sources/annotations">
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-xml/19.1/gt-xml-19.1.jar">
 		<attributes>
-			<attribute name="optional" value="true"/>
+			<attribute name="maven.artifactId" value="gt-xml"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="ignore_optional_problems" value="true"/>
-			<attribute name="m2e-apt" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-api/19.1/gt-api-19.1.jar">
 		<attributes>
-			<attribute name="optional" value="true"/>
+			<attribute name="maven.artifactId" value="gt-api"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="ignore_optional_problems" value="true"/>
-			<attribute name="m2e-apt" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/vividsolutions/jts-core/1.14.0/jts-core-1.14.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jts-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.14.0"/>
+			<attribute name="maven.groupId" value="com.vividsolutions"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-main/19.1/gt-main-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-main"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-wfs/19.1/gt-xsd-wfs-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-wfs"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-filter/19.1/gt-xsd-filter-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-filter"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-core/19.1/gt-xsd-core-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/picocontainer/picocontainer/1.2/picocontainer-1.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="picocontainer"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2"/>
+			<attribute name="maven.groupId" value="picocontainer"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-jxpath"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.3"/>
+			<attribute name="maven.groupId" value="commons-jxpath"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-collections"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.2.2"/>
+			<attribute name="maven.groupId" value="commons-collections"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/eclipse/xsd/org.eclipse.xsd/2.12.0/org.eclipse.xsd-2.12.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="org.eclipse.xsd"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.12.0"/>
+			<attribute name="maven.groupId" value="org.eclipse.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-gml2/19.1/gt-xsd-gml2-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-gml2"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-gml3/19.1/gt-xsd-gml3-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-gml3"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-fes/19.1/gt-xsd-fes-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-fes"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/xsd/gt-xsd-ows/19.1/gt-xsd-ows-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-xsd-ows"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.xsd"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/ogc/net.opengis.ows/19.1/net.opengis.ows-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="net.opengis.ows"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.ogc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xml/xml-commons-resolver/1.2/xml-commons-resolver-1.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xml-commons-resolver"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2"/>
+			<attribute name="maven.groupId" value="org.apache.xml"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/ogc/net.opengis.wfs/19.1/net.opengis.wfs-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="net.opengis.wfs"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.ogc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/ogc/org.w3.xlink/19.1/org.w3.xlink-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="org.w3.xlink"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.ogc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/ogc/net.opengis.fes/19.1/net.opengis.fes-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="net.opengis.fes"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools.ogc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/eclipse/emf/org.eclipse.emf.common/2.12.0/org.eclipse.emf.common-2.12.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="org.eclipse.emf.common"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.12.0"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/eclipse/emf/org.eclipse.emf.ecore/2.12.0/org.eclipse.emf.ecore-2.12.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="org.eclipse.emf.ecore"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.12.0"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/eclipse/emf/org.eclipse.emf.ecore.xmi/2.12.0/org.eclipse.emf.ecore.xmi-2.12.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="org.eclipse.emf.ecore.xmi"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.12.0"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jai_core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1.3"/>
+			<attribute name="maven.groupId" value="javax.media"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-shapefile/19.1/gt-shapefile-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-shapefile"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-data/19.1/gt-data-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-data"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jdom2"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.0.6"/>
+			<attribute name="maven.groupId" value="org.jdom"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-swing/19.1/gt-swing-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-swing"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-render/19.1/gt-render-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-render"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-coverage/19.1/gt-coverage-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-coverage"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jai_imageio"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1"/>
+			<attribute name="maven.groupId" value="javax.media"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/vividsolutions/jts-example/1.14.0/jts-example-1.14.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jts-example"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.14.0"/>
+			<attribute name="maven.groupId" value="com.vividsolutions"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/vividsolutions/jts-io/1.14.0/jts-io-1.14.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jts-io"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.14.0"/>
+			<attribute name="maven.groupId" value="com.vividsolutions"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="json-simple"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1"/>
+			<attribute name="maven.groupId" value="com.googlecode.json-simple"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jaitools/jt-zonalstats/1.4.0/jt-zonalstats-1.4.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-zonalstats"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.4.0"/>
+			<attribute name="maven.groupId" value="org.jaitools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jaitools/jt-utils/1.4.0/jt-utils-1.4.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-utils"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.4.0"/>
+			<attribute name="maven.groupId" value="org.jaitools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/affine/jt-affine/1.0.22/jt-affine-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-affine"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.affine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jai_codec"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1.3"/>
+			<attribute name="maven.groupId" value="javax.media"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/algebra/jt-algebra/1.0.22/jt-algebra-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-algebra"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.algebra"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/bandmerge/jt-bandmerge/1.0.22/jt-bandmerge-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-bandmerge"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.bandmerge"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/bandselect/jt-bandselect/1.0.22/jt-bandselect-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-bandselect"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.bandselect"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/bandcombine/jt-bandcombine/1.0.22/jt-bandcombine-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-bandcombine"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.bandcombine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/border/jt-border/1.0.22/jt-border-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-border"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.border"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/buffer/jt-buffer/1.0.22/jt-buffer-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-buffer"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.buffer"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/crop/jt-crop/1.0.22/jt-crop-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-crop"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.crop"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/iterators/jt-iterators/1.0.22/jt-iterators-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-iterators"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.iterators"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/lookup/jt-lookup/1.0.22/jt-lookup-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-lookup"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.lookup"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/mosaic/jt-mosaic/1.0.22/jt-mosaic-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-mosaic"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.mosaic"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/nullop/jt-nullop/1.0.22/jt-nullop-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-nullop"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.nullop"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/rescale/jt-rescale/1.0.22/jt-rescale-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-rescale"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.rescale"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/scale/jt-scale/1.0.22/jt-scale-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-scale"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.scale"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/stats/jt-stats/1.0.22/jt-stats-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-stats"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.stats"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="guava"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="17.0"/>
+			<attribute name="maven.groupId" value="com.google.guava"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/translate/jt-translate/1.0.22/jt-translate-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-translate"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.translate"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/utilities/jt-utilities/1.0.22/jt-utilities-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-utilities"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.utilities"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/warp/jt-warp/1.0.22/jt-warp-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-warp"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.warp"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/zonal/jt-zonal/1.0.22/jt-zonal-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-zonal"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.zonal"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/binarize/jt-binarize/1.0.22/jt-binarize-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-binarize"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.binarize"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/format/jt-format/1.0.22/jt-format-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-format"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.format"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/colorconvert/jt-colorconvert/1.0.22/jt-colorconvert-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-colorconvert"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.colorconvert"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/errordiffusion/jt-errordiffusion/1.0.22/jt-errordiffusion-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-errordiffusion"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.errordiffusion"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/orderdither/jt-orderdither/1.0.22/jt-orderdither-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-orderdither"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.orderdither"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/colorindexer/jt-colorindexer/1.0.22/jt-colorindexer-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-colorindexer"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.colorindexer"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/imagefunction/jt-imagefunction/1.0.22/jt-imagefunction-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-imagefunction"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.imagefunction"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/piecewise/jt-piecewise/1.0.22/jt-piecewise-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-piecewise"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.piecewise"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/classifier/jt-classifier/1.0.22/jt-classifier-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-classifier"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.classifier"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/rlookup/jt-rlookup/1.0.22/jt-rlookup-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-rlookup"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.rlookup"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/it/geosolutions/jaiext/vectorbin/jt-vectorbin/1.0.22/jt-vectorbin-1.0.22.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jt-vectorbin"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.22"/>
+			<attribute name="maven.groupId" value="it.geosolutions.jaiext.vectorbin"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-cql/19.1/gt-cql-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-cql"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/miglayout/miglayout/3.7/miglayout-3.7-swing.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="miglayout"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.7"/>
+			<attribute name="maven.classifier" value="swing"/>
+			<attribute name="maven.groupId" value="com.miglayout"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-referencing/19.1/gt-referencing-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-referencing"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/ejml/ejml-ddense/0.32/ejml-ddense-0.32.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="ejml-ddense"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="0.32"/>
+			<attribute name="maven.groupId" value="org.ejml"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/ejml/ejml-core/0.32/ejml-core-0.32.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="ejml-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="0.32"/>
+			<attribute name="maven.groupId" value="org.ejml"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-pool"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.5.4"/>
+			<attribute name="maven.groupId" value="commons-pool"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-metadata/19.1/gt-metadata-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-metadata"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-opengis/19.1/gt-opengis-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-opengis"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jsr-275"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0-beta-2"/>
+			<attribute name="maven.groupId" value="net.java.dev.jsr-275"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/jgridshift/jgridshift/1.0/jgridshift-1.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jgridshift"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0"/>
+			<attribute name="maven.groupId" value="jgridshift"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="GeographicLib-Java"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.44"/>
+			<attribute name="maven.groupId" value="net.sf.geographiclib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/geotools/gt-epsg-hsql/19.1/gt-epsg-hsql-19.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="gt-epsg-hsql"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="19.1"/>
+			<attribute name="maven.groupId" value="org.geotools"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="hsqldb"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.3.0"/>
+			<attribute name="maven.groupId" value="org.hsqldb"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/redis/clients/jedis/2.8.1/jedis-2.8.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jedis"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.8.1"/>
+			<attribute name="maven.groupId" value="redis.clients"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-pool2"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.4.2"/>
+			<attribute name="maven.groupId" value="org.apache.commons"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-math3"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.6.1"/>
+			<attribute name="maven.groupId" value="org.apache.commons"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-io"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.6"/>
+			<attribute name="maven.groupId" value="commons-io"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jmonkeyengine/jme3-core/3.3.2-stable/jme3-core-3.3.2-stable.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jme3-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.3.2-stable"/>
+			<attribute name="maven.groupId" value="org.jmonkeyengine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jmonkeyengine/jme3-desktop/3.3.2-stable/jme3-desktop-3.3.2-stable.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jme3-desktop"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.3.2-stable"/>
+			<attribute name="maven.groupId" value="org.jmonkeyengine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jmonkeyengine/jme3-lwjgl/3.3.2-stable/jme3-lwjgl-3.3.2-stable.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jme3-lwjgl"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.3.2-stable"/>
+			<attribute name="maven.groupId" value="org.jmonkeyengine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/lwjgl/lwjgl/lwjgl/2.9.3/lwjgl-2.9.3.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="lwjgl"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.9.3"/>
+			<attribute name="maven.groupId" value="org.lwjgl.lwjgl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/lwjgl/lwjgl/lwjgl-platform/2.9.3/lwjgl-platform-2.9.3-natives-windows.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="lwjgl-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.9.3"/>
+			<attribute name="maven.classifier" value="natives-windows"/>
+			<attribute name="maven.groupId" value="org.lwjgl.lwjgl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/lwjgl/lwjgl/lwjgl-platform/2.9.3/lwjgl-platform-2.9.3-natives-linux.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="lwjgl-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.9.3"/>
+			<attribute name="maven.classifier" value="natives-linux"/>
+			<attribute name="maven.groupId" value="org.lwjgl.lwjgl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/lwjgl/lwjgl/lwjgl-platform/2.9.3/lwjgl-platform-2.9.3-natives-osx.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="lwjgl-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.9.3"/>
+			<attribute name="maven.classifier" value="natives-osx"/>
+			<attribute name="maven.groupId" value="org.lwjgl.lwjgl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jinput"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.0.5"/>
+			<attribute name="maven.groupId" value="net.java.jinput"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jutils"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.0"/>
+			<attribute name="maven.groupId" value="net.java.jutils"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jinput-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.scope" value="runtime"/>
+			<attribute name="maven.version" value="2.0.5"/>
+			<attribute name="maven.classifier" value="natives-linux"/>
+			<attribute name="maven.groupId" value="net.java.jinput"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jinput-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.scope" value="runtime"/>
+			<attribute name="maven.version" value="2.0.5"/>
+			<attribute name="maven.classifier" value="natives-windows"/>
+			<attribute name="maven.groupId" value="net.java.jinput"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jinput-platform"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.scope" value="runtime"/>
+			<attribute name="maven.version" value="2.0.5"/>
+			<attribute name="maven.classifier" value="natives-osx"/>
+			<attribute name="maven.groupId" value="net.java.jinput"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jmonkeyengine/jme3-effects/3.3.2-stable/jme3-effects-3.3.2-stable.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jme3-effects"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.3.2-stable"/>
+			<attribute name="maven.groupId" value="org.jmonkeyengine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/jmonkeyengine/jme3-terrain/3.3.2-stable/jme3-terrain-3.3.2-stable.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jme3-terrain"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="3.3.2-stable"/>
+			<attribute name="maven.groupId" value="org.jmonkeyengine"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.10/batik-svg-dom-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-svg-dom"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.10/batik-awt-util-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-awt-util"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/xmlgraphics-commons/2.2/xmlgraphics-commons-2.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xmlgraphics-commons"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.2"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="commons-logging"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.4"/>
+			<attribute name="maven.groupId" value="commons-logging"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-css/1.10/batik-css-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-css"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-dom/1.10/batik-dom-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-dom"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-xml/1.10/batik-xml-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-xml"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xalan"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.groupId" value="xalan"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="serializer"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.groupId" value="xalan"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xml-apis"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.3.04"/>
+			<attribute name="maven.groupId" value="xml-apis"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-ext/1.10/batik-ext-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-ext"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-parser/1.10/batik-parser-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-parser"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-util/1.10/batik-util-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-util"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-constants/1.10/batik-constants-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-constants"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-i18n/1.10/batik-i18n-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-i18n"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xml-apis-ext"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.3.04"/>
+			<attribute name="maven.groupId" value="xml-apis"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-svggen/1.10/batik-svggen-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-svggen"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-codec/1.10/batik-codec-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-codec"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.10/batik-bridge-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-bridge"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.10/batik-gvt-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-gvt"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-script/1.10/batik-script-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-script"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-transcoder/1.10/batik-transcoder-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-transcoder"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/thoughtworks/xstream/xstream/1.4.12/xstream-1.4.12.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xstream"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.4.12"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/jeang/.m2/repository/com/thoughtworks/xstream/xstream/1.4.12/xstream-1.4.12-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="com.thoughtworks.xstream"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xmlpull"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1.3.1"/>
+			<attribute name="maven.groupId" value="xmlpull"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="xpp3_min"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.1.4c"/>
+			<attribute name="maven.groupId" value="xpp3"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/local_gurobi/local_gurobi/local_gurobi/local_gurobi-local_gurobi.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="local_gurobi"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="local_gurobi"/>
+			<attribute name="maven.groupId" value="local_gurobi"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/haifengl/smile-core/1.2.1/smile-core-1.2.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="smile-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2.1"/>
+			<attribute name="maven.groupId" value="com.github.haifengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/haifengl/smile-data/1.2.1/smile-data-1.2.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="smile-data"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2.1"/>
+			<attribute name="maven.groupId" value="com.github.haifengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/haifengl/smile-math/1.2.1/smile-math-1.2.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="smile-math"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2.1"/>
+			<attribute name="maven.groupId" value="com.github.haifengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="slf4j-api"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.7.21"/>
+			<attribute name="maven.groupId" value="org.slf4j"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/haifengl/smile-graph/1.2.1/smile-graph-1.2.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="smile-graph"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.2.1"/>
+			<attribute name="maven.groupId" value="com.github.haifengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/esotericsoftware/yamlbeans/yamlbeans/1.09/yamlbeans-1.09.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="yamlbeans"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.09"/>
+			<attribute name="maven.groupId" value="com.esotericsoftware.yamlbeans"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jackson-core"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.9.9"/>
+			<attribute name="maven.groupId" value="com.fasterxml.jackson.core"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0.pr1/jackson-databind-2.10.0.pr1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jackson-databind"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.10.0.pr1"/>
+			<attribute name="maven.groupId" value="com.fasterxml.jackson.core"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0.pr1/jackson-annotations-2.10.0.pr1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jackson-annotations"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="2.10.0.pr1"/>
+			<attribute name="maven.groupId" value="com.fasterxml.jackson.core"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/twak/jutils/0.0.1/jutils-0.0.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jutils"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="0.0.1"/>
+			<attribute name="maven.groupId" value="com.github.twak"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/gov/nist/math/jama/1.0.3/jama-1.0.3.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="jama"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.0.3"/>
+			<attribute name="maven.groupId" value="gov.nist.math"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/org/apache/xmlgraphics/batik-anim/1.10/batik-anim-1.10.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="batik-anim"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="1.10"/>
+			<attribute name="maven.groupId" value="org.apache.xmlgraphics"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/twak/campskeleton/0.0.1/campskeleton-0.0.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="campskeleton"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="0.0.1"/>
+			<attribute name="maven.groupId" value="com.github.twak"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="c:/Users/jeang/.m2/repository/com/github/twak/siteplan/0.0.1/siteplan-0.0.1.jar">
+		<attributes>
+			<attribute name="maven.artifactId" value="siteplan"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.version" value="0.0.1"/>
+			<attribute name="maven.groupId" value="com.github.twak"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>

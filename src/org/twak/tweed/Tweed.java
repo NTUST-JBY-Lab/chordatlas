@@ -85,6 +85,8 @@ import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
+import com.jme3.scene.Geometry;
+import com.jme3.scene.shape.Box;
 import com.jme3.shadow.EdgeFilteringMode;
 import com.jme3.shadow.PointLightShadowRenderer;
 import com.jme3.ui.Picture;
@@ -126,6 +128,7 @@ public class Tweed extends SimpleApplication {
 	PointLightShadowRenderer plsr;
 	FilterPostProcessor fpp;
 	private DepthOfFieldFilter dofFilter;
+	private Node axisGizmo;
 
 	
 	public Node debug;
@@ -138,6 +141,7 @@ public class Tweed extends SimpleApplication {
 	@Override
 	public void reshape( int w, int h ) {
 		super.reshape( w, h );
+		updateAxisGizmo( w, h );
 	}
 	
 	
@@ -169,6 +173,7 @@ public class Tweed extends SimpleApplication {
 		
 		clearBackground();
 		buildBackground();
+		buildAxisGizmo();
 		
 		getFlyByCamera().setDragToRotate(true);
 
@@ -267,6 +272,60 @@ public class Tweed extends SimpleApplication {
 			}
 		}, TOGGLE_ORTHO );
 		
+	}
+
+	private void buildAxisGizmo() {
+		axisGizmo = new Node( "axis gizmo" );
+		axisGizmo.attachChild( createAxisBar( "X axis", ColorRGBA.Red,
+				new Vector3f( 1, 0, 0 ) ) );
+		axisGizmo.attachChild( createAxisBar( "Y axis", ColorRGBA.Green,
+				new Vector3f( 0, 1, 0 ) ) );
+		axisGizmo.attachChild( createAxisBar( "Z axis", ColorRGBA.Blue,
+				new Vector3f( 0, 0, 1 ).normalizeLocal() ) );
+		// 改成 guiNode 才能固定在 ui 上
+		guiNode.attachChild( axisGizmo );
+		updateAxisGizmo( cam.getWidth(), cam.getHeight() );
+	}
+
+	private Geometry createAxisBar( String name, ColorRGBA color,
+			Vector3f direction ) {
+		float length = 60;
+		float thickness = 7;
+
+		Geometry bar = new Geometry( name,
+				new Box( length / 2, thickness / 2, thickness / 2 ) );
+		Material material = new Material( assetManager,
+				"Common/MatDefs/Misc/Unshaded.j3md" );
+		material.setColor( "Color", color );
+		bar.setMaterial( material );
+		bar.setLocalTranslation( direction.mult( length / 2 ) );
+		// 將 X 指向 direction 方向
+		if (Math.abs(direction.x) != 1.f) {
+			// (1, 0, 0) -> direction; (0, 1, 0) -> (1, 0, 0); (0, 0, 1) -> direction X (1, 0, 0)
+			Quaternion R = new Quaternion().fromRotationMatrix(
+				direction.x, 1, 0,
+				direction.y, 0, direction.z,
+				direction.z, 0, -direction.y);
+			bar.setLocalRotation(R);
+		}
+		return bar;
+	}
+
+	private void updateAxisGizmo( int width, int height ) {
+		if ( axisGizmo == null )
+			return;
+
+		float length = 60;
+		float padding = 20;
+		axisGizmo.setLocalTranslation( padding + length,
+				height - padding - length, 0 );
+		// 相機座標系：+Z 朝前、+X 朝左、+Y 朝上（右手座標系）
+		// 螢幕座標系：+Z 朝後、+X 朝右、+Y 朝上（右手座標系）
+		// 先乘上 world to camera rotation 轉到相機座標系、再繞Y轉180度到螢幕座標系
+		axisGizmo.setLocalRotation(
+			new Quaternion().fromAngleAxis((float)Math.toRadians(180), new Vector3f(0, 1, 0))
+			.mult(cam.getRotation().inverse())
+		);
 	}
 
 	private final static Pattern 
@@ -532,6 +591,8 @@ public class Tweed extends SimpleApplication {
 			if (tool != null && tool.isDragging()) {
 				tool.dragEnd();
 			}
+
+		updateAxisGizmo( cam.getWidth(), cam.getHeight() );
 		
 		checkForEnd = true;
 		

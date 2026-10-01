@@ -11,7 +11,7 @@ procex ([video](https://youtu.be/K0yUXjM_YKE)) are a mathematical model of tradi
 
 1. 安裝 [java jdk 8](https://www.oracle.com/tw/java/technologies/javase/javase8-archive-downloads.html)、[maven](https://maven.apache.org/download.cgi#CurrentMaven)、gurobi 9
 2. 執行下方指令來將 Gurobi 安裝為 local package  
-  `mvn install:install-file -Dfile=<path to gurobi.jar> -DgroupId=local_gurobi -DartifactId=local_gurobi -Dversion=local_gurobi -Dpackaging=jar`
+  `mvn install:install-file -DgroupId=local_gurobi -DartifactId=local_gurobi -Dversion=local_gurobi -Dpackaging=jar -Dfile=<path to gurobi.jar>`
 3. 在專案根目錄執行 `mvn package`
 4. 編譯好的 jar 會在 `target/` 資料夾
 
