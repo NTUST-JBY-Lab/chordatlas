@@ -170,6 +170,7 @@ public class Tweed extends SimpleApplication {
 
 		setDisplayFps(false);
 		setDisplayStatView(false);
+		viewPort.setBackgroundColor(ColorRGBA.Gray);
 		
 		clearBackground();
 		buildBackground();
