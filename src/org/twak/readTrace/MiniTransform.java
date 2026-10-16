@@ -71,6 +71,12 @@ public class MiniTransform {
 		}
 	}
 	
+	/**
+	 * 彈出視窗，決定要如何轉換成 minimesh
+	 * @param oneOfManyObj
+	 * @param outputDir
+	 * @param onDone
+	 */
 	public static void convertToMini( File oneOfManyObj, File outputDir, Runnable onDone ) {
 		
 		MiniOptions options =  new MiniOptions(outputDir);
@@ -102,13 +108,19 @@ public class MiniTransform {
 		}.frame();
 	}
 
+	/**
+	 * 轉換成 minimesh
+	 * @param bigObj
+	 * @param outfile
+	 * @param transform
+	 */
 	public static void convertToMini( Iterable<File> bigObj, File outfile, Matrix4d transform ) {
 
 		outfile.mkdirs();
 
 		ObjDump src = new ObjDump( bigObj );//.iterator().next() );
 		
-		src.centerVerts();
+		// src.centerVerts();
 		src.transform (transform);
 		
 		long count = src.material2Face.entrySet().stream().mapToInt( x -> x.getValue().size() ).sum();

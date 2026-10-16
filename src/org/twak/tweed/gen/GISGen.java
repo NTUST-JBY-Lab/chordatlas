@@ -77,6 +77,9 @@ public class GISGen  extends LineGen3d implements ICanSave {
 	public static final String CROPPED_OBJ = "cropped.obj";
 
 	transient List<Line3d> lines = new ArrayList();
+	/**
+	 * GIS 系統得到的所有 footprint
+	 */
 	transient Map<Integer,LoopL<Point3d>> blocks = new HashMap<>();
 	transient Map<Loop<Point3d>,LoopL<Point3d>> lot2block = new HashMap<>();
 	
@@ -498,6 +501,10 @@ public class GISGen  extends LineGen3d implements ICanSave {
 		return out;
 	}
 	
+	/**
+	 * 對某個 footprint、匯入那區域的 Mesh
+	 * @param index
+	 */
 	private void importMesh( int index ) {
 		
 		LoopL<Point3d> polies = blocks.get( index );
@@ -527,6 +534,7 @@ public class GISGen  extends LineGen3d implements ICanSave {
 
 		Loop<Point3d> hull = new Loop<Point3d>( ( Arrays.stream( chull.getLineSegments() ).map( x -> new Point3d( x.getStart().getX(), 0, x.getStart().getY() ) ).collect( Collectors.toList() ) ) );
 
+		/// 所有 Mesh 都會存在 scratch folder 下，所以是要找新 Mesh 的編號
 		File root = new File( Tweed.SCRATCH + "meshes" + File.separator );
 
 		int i = 0;
@@ -536,11 +544,13 @@ public class GISGen  extends LineGen3d implements ICanSave {
 			i++;
 
 		l.mkdirs();
+		//
 
 		File croppedFile = new File( l, CROPPED_OBJ );
 		
 		boolean found = false;
 		
+		/// 如果使用 Minimesh 那可以直接對 Minimesh 以 convex hull 做 clip
 		for ( Gen gen : tweed.frame.getGensOf( MiniGen.class ) ) { // minigen == optimised obj
 			
 			( (MiniGen) gen ).clip( hull, croppedFile );
@@ -549,6 +559,7 @@ public class GISGen  extends LineGen3d implements ICanSave {
 			found = true;
 		}
 		
+		/// 如果沒有 minimesh 則「直接」 import 最後一個 obj
 		if (!found) 
 			
 			for ( Gen gen : tweed.frame.getGensOf( MeshGen.class ) ) { // obj == just import whole obj
@@ -594,6 +605,12 @@ public class GISGen  extends LineGen3d implements ICanSave {
 			Jz.showOptionPane(  tweed.frame(), "Failed to find mesh from minimesh or gml layers" );
 	}
 
+	/**
+	 * 生成任一個和 v 垂直、長度 scale 的向量
+	 * @param v
+	 * @param scale
+	 * @return
+	 */
 	public static Vector3d perp( Vector3d v, double scale ) {
 		Vector3d out = new Vector3d( -v.z, 0, v.x );
 		double l = out.length();

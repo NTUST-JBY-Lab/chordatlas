@@ -616,6 +616,7 @@ public class GurobiSkelSolver {
 				
 				boolean one = false;
 				
+				// pt 是 cluster 中的每個 building facade point
 				for ( MFPoint pt : d.things ) {
 
 					MiniSelectEdge miniSelectEdge = new MiniSelectEdge();
@@ -624,6 +625,7 @@ public class GurobiSkelSolver {
 					List<HalfEdge> nearCorners = findNear( mf.megafacade, pt, mesh );
 
 					try {
+						// he 是 tesselation 上靠近 pt 的點
 						for ( HalfEdge he : nearCorners ) {
 
 							GRBVar heVar = model.addVar( 0.0, 1.0, 0, GRB.BINARY, MINI_TO_EDGE );
@@ -636,6 +638,7 @@ public class GurobiSkelSolver {
 
 							if ( he.over != null ) { // not corner
 
+								// SuperFace.height 的初始值 在 SuperFace.java:22：
 								if ( pt.right != null )
 									cost += Math.abs( pt.right.height - ( (SuperFace) he.face ).height );
 
