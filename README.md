@@ -17,6 +17,12 @@ procex ([video](https://youtu.be/K0yUXjM_YKE)) are a mathematical model of tradi
 
 > 如果使用 VS Code 開啟專案，可以修改 .vscode/settings.json 中 `maven.executable.path`、`maven.terminal.customEnv` 的 JAVA_HOME、`terminal.integrated.env.windows`的 JAVA_HOME 和 PATH 的值到 jdk 及 maven 的安裝路徑
 
+> 可以從左方的 Debug 面版直接執行、幀錯本程式，但要先執行 `mvn package` 來確保第三方套件被安裝
+
+範例專案架構，將jre、jdk、maven安裝在和chordatlas（本repo）同個資料夾下
+
+![](wiki/project_hierarchy.png)
+
 ## run
 
 the system is developed on ubuntu, but most of the non-machine learning systems should work on any platform. chordatlas is very much "academic-grade" - if you have problems using this system, I would love to [know](https://github.com/twak/chordatlas/issues) so I can fix them!
